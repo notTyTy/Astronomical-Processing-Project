@@ -1,6 +1,6 @@
 ﻿using System.ServiceModel;
 
-namespace ConsoleServer
+namespace Console_Server_Testing
 {
     [ServiceContract]
     internal interface IAstroContract
