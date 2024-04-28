@@ -42,34 +42,34 @@
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.fontDialog2 = new System.Windows.Forms.FontDialog();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.groupExtras = new System.Windows.Forms.GroupBox();
+            this.listViewData = new System.Windows.Forms.ListView();
             this.starVelocity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.starDistance = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.temperature = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.eventHorizon = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.groupStarVelocity = new System.Windows.Forms.GroupBox();
+            this.textBoxRest = new System.Windows.Forms.TextBox();
+            this.textBoxObserved = new System.Windows.Forms.TextBox();
+            this.lvlRest = new System.Windows.Forms.Label();
+            this.lblObserved = new System.Windows.Forms.Label();
+            this.groupStarDistance = new System.Windows.Forms.GroupBox();
+            this.textBoxParralax = new System.Windows.Forms.TextBox();
+            this.lblParralax = new System.Windows.Forms.Label();
+            this.btnCalculate = new System.Windows.Forms.Button();
+            this.groupTemperature = new System.Windows.Forms.GroupBox();
+            this.textBoxCelsius = new System.Windows.Forms.TextBox();
+            this.lblCelsius = new System.Windows.Forms.Label();
+            this.groupEventHorizon = new System.Windows.Forms.GroupBox();
+            this.textBoxExponent = new System.Windows.Forms.TextBox();
+            this.lblMassExponent = new System.Windows.Forms.Label();
+            this.textBoxMass = new System.Windows.Forms.TextBox();
+            this.lblMass = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
+            this.groupStarVelocity.SuspendLayout();
+            this.groupStarDistance.SuspendLayout();
+            this.groupTemperature.SuspendLayout();
+            this.groupEventHorizon.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -107,7 +107,6 @@
             this.spanishToolStripMenuItem.Name = "spanishToolStripMenuItem";
             this.spanishToolStripMenuItem.Size = new System.Drawing.Size(143, 26);
             this.spanishToolStripMenuItem.Text = "Spanish";
-            this.spanishToolStripMenuItem.Click += new System.EventHandler(this.spanishToolStripMenuItem_Click);
             // 
             // frenchToolStripMenuItem
             // 
@@ -160,30 +159,30 @@
             this.backgroundColorToolStripMenuItem.Text = "Background Color";
             this.backgroundColorToolStripMenuItem.Click += new System.EventHandler(this.backgroundColorToolStripMenuItem_Click);
             // 
-            // groupBox1
+            // groupExtras
             // 
-            this.groupBox1.Location = new System.Drawing.Point(443, 49);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(335, 227);
-            this.groupBox1.TabIndex = 10;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupExtras.Location = new System.Drawing.Point(443, 49);
+            this.groupExtras.Name = "groupExtras";
+            this.groupExtras.Size = new System.Drawing.Size(335, 227);
+            this.groupExtras.TabIndex = 10;
+            this.groupExtras.TabStop = false;
+            this.groupExtras.Text = "Language and Theming";
             // 
-            // listView1
+            // listViewData
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listViewData.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.starVelocity,
             this.starDistance,
             this.temperature,
             this.eventHorizon});
-            this.listView1.FullRowSelect = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 301);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(800, 253);
-            this.listView1.TabIndex = 11;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listViewData.FullRowSelect = true;
+            this.listViewData.HideSelection = false;
+            this.listViewData.Location = new System.Drawing.Point(0, 301);
+            this.listViewData.Name = "listViewData";
+            this.listViewData.Size = new System.Drawing.Size(800, 253);
+            this.listViewData.TabIndex = 11;
+            this.listViewData.UseCompatibleStateImageBehavior = false;
+            this.listViewData.View = System.Windows.Forms.View.Details;
             // 
             // starVelocity
             // 
@@ -205,158 +204,159 @@
             this.eventHorizon.Text = "Event Horizon (m)";
             this.eventHorizon.Width = 170;
             // 
-            // groupBox2
+            // groupStarVelocity
             // 
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 49);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 134);
-            this.groupBox2.TabIndex = 14;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Star Velocity (m/s)";
+            this.groupStarVelocity.Controls.Add(this.textBoxRest);
+            this.groupStarVelocity.Controls.Add(this.textBoxObserved);
+            this.groupStarVelocity.Controls.Add(this.lvlRest);
+            this.groupStarVelocity.Controls.Add(this.lblObserved);
+            this.groupStarVelocity.Location = new System.Drawing.Point(12, 49);
+            this.groupStarVelocity.Name = "groupStarVelocity";
+            this.groupStarVelocity.Size = new System.Drawing.Size(200, 134);
+            this.groupStarVelocity.TabIndex = 14;
+            this.groupStarVelocity.TabStop = false;
+            this.groupStarVelocity.Text = "Star Velocity (m/s)";
             // 
-            // groupBox3
+            // textBoxRest
             // 
-            this.groupBox3.Controls.Add(this.textBox1);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Location = new System.Drawing.Point(12, 190);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 86);
-            this.groupBox3.TabIndex = 15;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Star Distance (pc)";
+            this.textBoxRest.Location = new System.Drawing.Point(6, 92);
+            this.textBoxRest.Name = "textBoxRest";
+            this.textBoxRest.Size = new System.Drawing.Size(170, 22);
+            this.textBoxRest.TabIndex = 3;
             // 
-            // button1
+            // textBoxObserved
             // 
-            this.button1.Location = new System.Drawing.Point(227, 246);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 30);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Calculate";
-            this.button1.UseVisualStyleBackColor = true;
+            this.textBoxObserved.Location = new System.Drawing.Point(6, 42);
+            this.textBoxObserved.Name = "textBoxObserved";
+            this.textBoxObserved.Size = new System.Drawing.Size(170, 22);
+            this.textBoxObserved.TabIndex = 2;
             // 
-            // label1
+            // lvlRest
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Observed Wavelength (λ)";
+            this.lvlRest.AutoSize = true;
+            this.lvlRest.Location = new System.Drawing.Point(6, 73);
+            this.lvlRest.Name = "lvlRest";
+            this.lvlRest.Size = new System.Drawing.Size(129, 16);
+            this.lvlRest.TabIndex = 1;
+            this.lvlRest.Text = "Rest Wavelength (λ)";
             // 
-            // label2
+            // lblObserved
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Rest Wavelength (λ)";
+            this.lblObserved.AutoSize = true;
+            this.lblObserved.Location = new System.Drawing.Point(6, 25);
+            this.lblObserved.Name = "lblObserved";
+            this.lblObserved.Size = new System.Drawing.Size(161, 16);
+            this.lblObserved.TabIndex = 0;
+            this.lblObserved.Text = "Observed Wavelength (λ)";
             // 
-            // label3
+            // groupStarDistance
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 27);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(178, 16);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Parralax Angle (Arcseconds)";
+            this.groupStarDistance.Controls.Add(this.textBoxParralax);
+            this.groupStarDistance.Controls.Add(this.lblParralax);
+            this.groupStarDistance.Location = new System.Drawing.Point(12, 190);
+            this.groupStarDistance.Name = "groupStarDistance";
+            this.groupStarDistance.Size = new System.Drawing.Size(200, 86);
+            this.groupStarDistance.TabIndex = 15;
+            this.groupStarDistance.TabStop = false;
+            this.groupStarDistance.Text = "Star Distance (pc)";
             // 
-            // textBox1
+            // textBoxParralax
             // 
-            this.textBox1.Location = new System.Drawing.Point(9, 46);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 22);
-            this.textBox1.TabIndex = 1;
+            this.textBoxParralax.Location = new System.Drawing.Point(9, 46);
+            this.textBoxParralax.Name = "textBoxParralax";
+            this.textBoxParralax.Size = new System.Drawing.Size(167, 22);
+            this.textBoxParralax.TabIndex = 1;
             // 
-            // textBox2
+            // lblParralax
             // 
-            this.textBox2.Location = new System.Drawing.Point(6, 42);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(170, 22);
-            this.textBox2.TabIndex = 2;
+            this.lblParralax.AutoSize = true;
+            this.lblParralax.Location = new System.Drawing.Point(6, 27);
+            this.lblParralax.Name = "lblParralax";
+            this.lblParralax.Size = new System.Drawing.Size(178, 16);
+            this.lblParralax.TabIndex = 0;
+            this.lblParralax.Text = "Parralax Angle (Arcseconds)";
             // 
-            // textBox3
+            // btnCalculate
             // 
-            this.textBox3.Location = new System.Drawing.Point(6, 92);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(170, 22);
-            this.textBox3.TabIndex = 3;
+            this.btnCalculate.Location = new System.Drawing.Point(227, 246);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(200, 30);
+            this.btnCalculate.TabIndex = 18;
+            this.btnCalculate.Text = "Calculate";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
-            // groupBox4
+            // groupTemperature
             // 
-            this.groupBox4.Controls.Add(this.textBox4);
-            this.groupBox4.Controls.Add(this.label4);
-            this.groupBox4.Location = new System.Drawing.Point(227, 49);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(200, 86);
-            this.groupBox4.TabIndex = 16;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Temperature (K)";
+            this.groupTemperature.Controls.Add(this.textBoxCelsius);
+            this.groupTemperature.Controls.Add(this.lblCelsius);
+            this.groupTemperature.Location = new System.Drawing.Point(227, 49);
+            this.groupTemperature.Name = "groupTemperature";
+            this.groupTemperature.Size = new System.Drawing.Size(200, 86);
+            this.groupTemperature.TabIndex = 16;
+            this.groupTemperature.TabStop = false;
+            this.groupTemperature.Text = "Temperature (K)";
             // 
-            // textBox4
+            // textBoxCelsius
             // 
-            this.textBox4.Location = new System.Drawing.Point(9, 46);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(167, 22);
-            this.textBox4.TabIndex = 1;
+            this.textBoxCelsius.Location = new System.Drawing.Point(9, 46);
+            this.textBoxCelsius.Name = "textBoxCelsius";
+            this.textBoxCelsius.Size = new System.Drawing.Size(167, 22);
+            this.textBoxCelsius.TabIndex = 1;
             // 
-            // label4
+            // lblCelsius
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 27);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 16);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Celsius (°C)";
+            this.lblCelsius.AutoSize = true;
+            this.lblCelsius.Location = new System.Drawing.Point(6, 27);
+            this.lblCelsius.Name = "lblCelsius";
+            this.lblCelsius.Size = new System.Drawing.Size(75, 16);
+            this.lblCelsius.TabIndex = 0;
+            this.lblCelsius.Text = "Celsius (°C)";
             // 
-            // groupBox5
+            // groupEventHorizon
             // 
-            this.groupBox5.Controls.Add(this.textBox6);
-            this.groupBox5.Controls.Add(this.label6);
-            this.groupBox5.Controls.Add(this.textBox5);
-            this.groupBox5.Controls.Add(this.label5);
-            this.groupBox5.Location = new System.Drawing.Point(227, 147);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(200, 86);
-            this.groupBox5.TabIndex = 16;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Event Horizon (m)";
+            this.groupEventHorizon.Controls.Add(this.textBoxExponent);
+            this.groupEventHorizon.Controls.Add(this.lblMassExponent);
+            this.groupEventHorizon.Controls.Add(this.textBoxMass);
+            this.groupEventHorizon.Controls.Add(this.lblMass);
+            this.groupEventHorizon.Location = new System.Drawing.Point(227, 147);
+            this.groupEventHorizon.Name = "groupEventHorizon";
+            this.groupEventHorizon.Size = new System.Drawing.Size(200, 86);
+            this.groupEventHorizon.TabIndex = 16;
+            this.groupEventHorizon.TabStop = false;
+            this.groupEventHorizon.Text = "Event Horizon (m)";
             // 
-            // textBox5
+            // textBoxExponent
             // 
-            this.textBox5.Location = new System.Drawing.Point(9, 46);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(88, 22);
-            this.textBox5.TabIndex = 1;
+            this.textBoxExponent.Location = new System.Drawing.Point(138, 46);
+            this.textBoxExponent.Name = "textBoxExponent";
+            this.textBoxExponent.Size = new System.Drawing.Size(56, 22);
+            this.textBoxExponent.TabIndex = 3;
             // 
-            // label5
+            // lblMassExponent
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 27);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 16);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Mass (kg)";
+            this.lblMassExponent.AutoSize = true;
+            this.lblMassExponent.Location = new System.Drawing.Point(103, 49);
+            this.lblMassExponent.Name = "lblMassExponent";
+            this.lblMassExponent.Size = new System.Drawing.Size(34, 16);
+            this.lblMassExponent.TabIndex = 2;
+            this.lblMassExponent.Text = "x10^";
             // 
-            // label6
+            // textBoxMass
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(103, 49);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(34, 16);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "x10^";
+            this.textBoxMass.Location = new System.Drawing.Point(9, 46);
+            this.textBoxMass.Name = "textBoxMass";
+            this.textBoxMass.Size = new System.Drawing.Size(88, 22);
+            this.textBoxMass.TabIndex = 1;
             // 
-            // textBox6
+            // lblMass
             // 
-            this.textBox6.Location = new System.Drawing.Point(138, 46);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(56, 22);
-            this.textBox6.TabIndex = 3;
+            this.lblMass.AutoSize = true;
+            this.lblMass.Location = new System.Drawing.Point(6, 27);
+            this.lblMass.Name = "lblMass";
+            this.lblMass.Size = new System.Drawing.Size(66, 16);
+            this.lblMass.TabIndex = 0;
+            this.lblMass.Text = "Mass (kg)";
             // 
             // AstroClient
             // 
@@ -364,13 +364,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(800, 553);
-            this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.listView1);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupEventHorizon);
+            this.Controls.Add(this.groupTemperature);
+            this.Controls.Add(this.btnCalculate);
+            this.Controls.Add(this.groupStarDistance);
+            this.Controls.Add(this.groupStarVelocity);
+            this.Controls.Add(this.listViewData);
+            this.Controls.Add(this.groupExtras);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
@@ -381,14 +381,14 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AstroClient_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
+            this.groupStarVelocity.ResumeLayout(false);
+            this.groupStarVelocity.PerformLayout();
+            this.groupStarDistance.ResumeLayout(false);
+            this.groupStarDistance.PerformLayout();
+            this.groupTemperature.ResumeLayout(false);
+            this.groupTemperature.PerformLayout();
+            this.groupEventHorizon.ResumeLayout(false);
+            this.groupEventHorizon.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -410,29 +410,29 @@
         private System.Windows.Forms.FontDialog fontDialog1;
         private System.Windows.Forms.ToolStripMenuItem backgroundColorToolStripMenuItem;
         private System.Windows.Forms.FontDialog fontDialog2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.GroupBox groupExtras;
+        private System.Windows.Forms.ListView listViewData;
         private System.Windows.Forms.ColumnHeader starVelocity;
         private System.Windows.Forms.ColumnHeader starDistance;
         private System.Windows.Forms.ColumnHeader temperature;
         private System.Windows.Forms.ColumnHeader eventHorizon;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox groupStarVelocity;
+        private System.Windows.Forms.GroupBox groupStarDistance;
+        private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.TextBox textBoxRest;
+        private System.Windows.Forms.TextBox textBoxObserved;
+        private System.Windows.Forms.Label lvlRest;
+        private System.Windows.Forms.Label lblObserved;
+        private System.Windows.Forms.TextBox textBoxParralax;
+        private System.Windows.Forms.Label lblParralax;
+        private System.Windows.Forms.GroupBox groupTemperature;
+        private System.Windows.Forms.TextBox textBoxCelsius;
+        private System.Windows.Forms.Label lblCelsius;
+        private System.Windows.Forms.GroupBox groupEventHorizon;
+        private System.Windows.Forms.TextBox textBoxMass;
+        private System.Windows.Forms.Label lblMass;
+        private System.Windows.Forms.TextBox textBoxExponent;
+        private System.Windows.Forms.Label lblMassExponent;
     }
 }
 
