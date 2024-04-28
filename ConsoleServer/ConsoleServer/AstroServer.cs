@@ -1,4 +1,4 @@
-﻿using AstroMath;
+﻿using AstroMathFramework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,7 @@ namespace ConsoleServer
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
     internal class AstroServer : IAstroContract
     {
-        StarCalculations starCalculations = new StarCalculations();
+        readonly StarCalculations starCalculations = new StarCalculations();
 
         public double StarVelocity(double observed, double rest)
         {
