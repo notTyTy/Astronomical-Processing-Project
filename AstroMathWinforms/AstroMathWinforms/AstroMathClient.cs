@@ -42,9 +42,44 @@ namespace AstroMathWinforms
         private void backgroundColorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ColorDialog colorDialog = new ColorDialog();
-            colorDialog.ShowDialog();
+            if (colorDialog.ShowDialog() == DialogResult.OK)
+            {
+                BackColor = colorDialog.Color;
+                listViewData.BackColor = colorDialog.Color;
+                Color oppositeColor = Color.FromArgb(colorDialog.Color.ToArgb() ^ 0xffffff);
+                ForeColor = oppositeColor;
+                listViewData.ForeColor = oppositeColor;
+                menuStrip.BackColor = colorDialog.Color;
+                menuStrip.ForeColor = oppositeColor;
 
-            BackColor = colorDialog.Color;
+                foreach (Control control in Controls)
+                {
+                    if (control is System.Windows.Forms.GroupBox)
+                    {
+                        control.ForeColor = oppositeColor;
+
+                        foreach (Control groupBoxControl in control.Controls)
+                        {
+                            if (groupBoxControl is System.Windows.Forms.Button)
+                            {
+                                ((System.Windows.Forms.Button)groupBoxControl).BackColor = BackColor;
+                                ((System.Windows.Forms.Button)groupBoxControl).ForeColor = oppositeColor;
+                            }
+                            if (groupBoxControl is System.Windows.Forms.TextBox)
+                            {
+                                ((System.Windows.Forms.TextBox)groupBoxControl).BackColor = BackColor;
+                                ((System.Windows.Forms.TextBox)groupBoxControl).ForeColor = oppositeColor;
+                            }
+                        }
+                    }
+                    if (control is System.Windows.Forms.Button)
+                    {
+                        ((System.Windows.Forms.Button)control).BackColor = BackColor;
+                        ((System.Windows.Forms.Button)control).ForeColor = ForeColor;
+                    }
+                }
+            }
+
         }
 
 
@@ -143,15 +178,17 @@ namespace AstroMathWinforms
             if (englishToolStripMenuItem.Checked)
             {
                 Theme("light");
-                lightToolStripMenuItem.Checked = false;
+                englishToolStripMenuItem.Checked = false;
             }
             else if (frenchToolStripMenuItem.Checked)
             {
-                updateLanguage("fr-FR");
+                Theme("dark");
+                frenchToolStripMenuItem.Checked = false;
             }
             else if (germanToolStripMenuItem.Checked)
             {
-                updateLanguage("de-DE");
+                Theme("catppuccin");
+                germanToolStripMenuItem.Checked = false;
             }
         }
         private void btnUK_Click(object sender, EventArgs e)
@@ -173,6 +210,7 @@ namespace AstroMathWinforms
         private void Theme(string theme)
         {
             Color back = default;
+            Color fore = default;
             Color lblFore = default;
             Color groupFore = default;
             Color textboxFore = default;
@@ -185,6 +223,7 @@ namespace AstroMathWinforms
             switch (theme)
             {
                 case "light":
+                    fore = default;
                     back = default;
                     lblFore = default;
                     groupFore = default;
@@ -197,6 +236,7 @@ namespace AstroMathWinforms
 
                     break;
                 case "catppuccin":
+                    fore = ColorTranslator.FromHtml("#b5bfe2");
                     back = ColorTranslator.FromHtml("#303446");
                     lblFore = ColorTranslator.FromHtml("#b5bfe2");
                     groupFore = ColorTranslator.FromHtml("#c6d0f5");
@@ -209,6 +249,7 @@ namespace AstroMathWinforms
                     break;
 
                 case "dark":
+                    fore = ColorTranslator.FromHtml("#F0ECE5");
                     back = ColorTranslator.FromHtml("#161A30");
                     lblFore = ColorTranslator.FromHtml("#F0ECE5");
                     groupFore = ColorTranslator.FromHtml("#F0ECE5");
@@ -221,9 +262,11 @@ namespace AstroMathWinforms
                     break;
             }
             BackColor = back;
+            ForeColor = fore;
             listViewData.BackColor = listBack;
             listViewData.ForeColor = listFore;
-
+            menuStrip.ForeColor = fore;
+            menuStrip.BackColor = back;
             foreach (Control control in this.Controls)
             {
                 if (control is System.Windows.Forms.Label)
