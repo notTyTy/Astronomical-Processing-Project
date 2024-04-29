@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AstroClient));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.LanguageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.spanishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.germanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fontStyleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -74,7 +74,7 @@
             this.lblMassExponent = new System.Windows.Forms.Label();
             this.textBoxMass = new System.Windows.Forms.TextBox();
             this.lblMass = new System.Windows.Forms.Label();
-            this.menuStrip1.SuspendLayout();
+            this.menuStrip.SuspendLayout();
             this.groupExtras.SuspendLayout();
             this.groupStarVelocity.SuspendLayout();
             this.groupStarDistance.SuspendLayout();
@@ -82,40 +82,41 @@
             this.groupEventHorizon.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // menuStrip
             // 
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.languageToolStripMenuItem,
+            resources.ApplyResources(this.menuStrip, "menuStrip");
+            this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.LanguageToolStripMenuItem,
             this.fontStyleToolStripMenuItem,
             this.themeToolStripMenuItem,
             this.backgroundColorToolStripMenuItem});
-            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip.Name = "menuStrip";
             // 
-            // languageToolStripMenuItem
+            // LanguageToolStripMenuItem
             // 
-            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
-            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            resources.ApplyResources(this.LanguageToolStripMenuItem, "LanguageToolStripMenuItem");
+            this.LanguageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.englishToolStripMenuItem,
-            this.spanishToolStripMenuItem,
-            this.frenchToolStripMenuItem});
-            this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            this.frenchToolStripMenuItem,
+            this.germanToolStripMenuItem});
+            this.LanguageToolStripMenuItem.Name = "LanguageToolStripMenuItem";
+            this.LanguageToolStripMenuItem.Click += new System.EventHandler(this.LanguageToolStripMenuItem_Click);
             // 
             // englishToolStripMenuItem
             // 
             resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
             // 
-            // spanishToolStripMenuItem
-            // 
-            resources.ApplyResources(this.spanishToolStripMenuItem, "spanishToolStripMenuItem");
-            this.spanishToolStripMenuItem.Name = "spanishToolStripMenuItem";
-            // 
             // frenchToolStripMenuItem
             // 
             resources.ApplyResources(this.frenchToolStripMenuItem, "frenchToolStripMenuItem");
             this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
+            // 
+            // germanToolStripMenuItem
+            // 
+            resources.ApplyResources(this.germanToolStripMenuItem, "germanToolStripMenuItem");
+            this.germanToolStripMenuItem.Name = "germanToolStripMenuItem";
             // 
             // fontStyleToolStripMenuItem
             // 
@@ -175,18 +176,21 @@
             resources.ApplyResources(this.btnCatppuccin, "btnCatppuccin");
             this.btnCatppuccin.Name = "btnCatppuccin";
             this.btnCatppuccin.UseVisualStyleBackColor = true;
+            this.btnCatppuccin.Click += new System.EventHandler(this.btnCatppuccin_Click);
             // 
             // btnDark
             // 
             resources.ApplyResources(this.btnDark, "btnDark");
             this.btnDark.Name = "btnDark";
             this.btnDark.UseVisualStyleBackColor = true;
+            this.btnDark.Click += new System.EventHandler(this.btnDark_Click);
             // 
             // btnLight
             // 
             resources.ApplyResources(this.btnLight, "btnLight");
             this.btnLight.Name = "btnLight";
             this.btnLight.UseVisualStyleBackColor = true;
+            this.btnLight.Click += new System.EventHandler(this.btnLight_Click);
             // 
             // btnGerman
             // 
@@ -221,6 +225,7 @@
             resources.ApplyResources(this.btnFontStyle, "btnFontStyle");
             this.btnFontStyle.Name = "btnFontStyle";
             this.btnFontStyle.UseVisualStyleBackColor = true;
+            this.btnFontStyle.Click += new System.EventHandler(this.fontStyleToolStripMenuItem_Click);
             // 
             // listViewData
             // 
@@ -366,14 +371,15 @@
             this.Controls.Add(this.groupStarVelocity);
             this.Controls.Add(this.listViewData);
             this.Controls.Add(this.groupExtras);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.menuStrip);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.menuStrip;
             this.MaximizeBox = false;
             this.Name = "AstroClient";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AstroClient_FormClosing);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.groupExtras.ResumeLayout(false);
             this.groupStarVelocity.ResumeLayout(false);
             this.groupStarVelocity.PerformLayout();
@@ -390,13 +396,13 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip;
+        private System.Windows.Forms.ToolStripMenuItem LanguageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fontStyleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem themeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem spanishToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem frenchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem germanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lightToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem darkToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem catppuccinToolStripMenuItem;

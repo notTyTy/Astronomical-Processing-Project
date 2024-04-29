@@ -1,17 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
-using System.Linq;
+using System.Reflection.Emit;
 using System.ServiceModel;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace AstroMathWinforms
 {
@@ -23,15 +20,15 @@ namespace AstroMathWinforms
         {
             process = Process.Start(@"ConsoleServer.exe");
             InitializeComponent();
-            lightToolStripMenuItem.Checked = true;
         }
 
+        #region Server Connection
         const string address = "net.pipe://localhost/netpipeAstro";
         static NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
         static EndpointAddress ep = new EndpointAddress(address);
         IAstroContract astroContract =
         ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
-
+        #endregion
 
         private void fontStyleToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -50,37 +47,10 @@ namespace AstroMathWinforms
             BackColor = colorDialog.Color;
         }
 
-        private void ThemeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            // todo add theming options to the form
-
-            ToolStripMenuItem clickedItem = (ToolStripMenuItem)sender;
-
-            foreach (ToolStripMenuItem item in themeToolStripMenuItem.DropDownItems)
-            {
-                item.Checked = (item == clickedItem);
-            }
 
 
-            if (lightToolStripMenuItem.Checked)
-            {
-                BackColor = default;
-                lightToolStripMenuItem.Checked = true;
 
-                // default theming
-            }
-            else if (darkToolStripMenuItem.Checked)
-            {
-                darkToolStripMenuItem.Checked = true;
-            }
-            else if (catppuccinToolStripMenuItem.Checked)
-            {
-                catppuccinToolStripMenuItem.Checked = true;
-            }
-
-        }
-
-
+        #region Server processing
 
         private void AstroClient_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -146,12 +116,10 @@ namespace AstroMathWinforms
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
-
         }
+        #endregion
 
-
-
+        #region Language CultureInfo & Btns
         private void updateLanguage(string localisation)
         {
             CultureInfo newCulture = new CultureInfo(localisation);
@@ -160,6 +128,31 @@ namespace AstroMathWinforms
 
             Controls.Clear();
             InitializeComponent();
+            Theme("light");
+        }
+
+        private void LanguageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ToolStripMenuItem clickedItem = (ToolStripMenuItem)sender;
+
+            foreach (ToolStripMenuItem item in LanguageToolStripMenuItem.DropDownItems)
+            {
+                item.Checked = (item == clickedItem);
+            }
+
+            if (englishToolStripMenuItem.Checked)
+            {
+                Theme("light");
+                lightToolStripMenuItem.Checked = false;
+            }
+            else if (frenchToolStripMenuItem.Checked)
+            {
+                updateLanguage("fr-FR");
+            }
+            else if (germanToolStripMenuItem.Checked)
+            {
+                updateLanguage("de-DE");
+            }
         }
         private void btnUK_Click(object sender, EventArgs e)
         {
@@ -174,5 +167,134 @@ namespace AstroMathWinforms
         {
             updateLanguage("de-DE");
         }
+        #endregion
+
+        #region Theming Configuration & Btns
+        private void Theme(string theme)
+        {
+            Color back = default;
+            Color lblFore = default;
+            Color groupFore = default;
+            Color textboxFore = default;
+            Color textboxBack = default;
+            Color btnFore = default;
+            Color btnBack = default;
+            Color listFore = default;
+            Color listBack = default;
+
+            switch (theme)
+            {
+                case "light":
+                    back = default;
+                    lblFore = default;
+                    groupFore = default;
+                    textboxFore = default;
+                    textboxBack = default;
+                    btnFore = default;
+                    btnBack = default;
+                    listFore = default;
+                    listBack = default;
+
+                    break;
+                case "catppuccin":
+                    back = ColorTranslator.FromHtml("#303446");
+                    lblFore = ColorTranslator.FromHtml("#b5bfe2");
+                    groupFore = ColorTranslator.FromHtml("#c6d0f5");
+                    textboxFore = ColorTranslator.FromHtml("#c6d0f5");
+                    textboxBack = ColorTranslator.FromHtml("#414559");
+                    btnFore = ColorTranslator.FromHtml("#b5bfe2");
+                    btnBack = ColorTranslator.FromHtml("#51576d");
+                    listFore = ColorTranslator.FromHtml("#c6d0f5");
+                    listBack = ColorTranslator.FromHtml("#232634");
+                    break;
+
+                case "dark":
+                    back = ColorTranslator.FromHtml("#161A30");
+                    lblFore = ColorTranslator.FromHtml("#F0ECE5");
+                    groupFore = ColorTranslator.FromHtml("#F0ECE5");
+                    textboxFore = ColorTranslator.FromHtml("#F0ECE5");
+                    textboxBack = ColorTranslator.FromHtml("#31304D");
+                    btnFore = ColorTranslator.FromHtml("#F0ECE5");
+                    btnBack = ColorTranslator.FromHtml("#31304D");
+                    listFore = ColorTranslator.FromHtml("#F0ECE5");
+                    listBack = ColorTranslator.FromHtml("#161A30");
+                    break;
+            }
+            BackColor = back;
+            listViewData.BackColor = listBack;
+            listViewData.ForeColor = listFore;
+
+            foreach (Control control in this.Controls)
+            {
+                if (control is System.Windows.Forms.Label)
+                {
+                    control.ForeColor = lblFore;
+                }
+                if (control is System.Windows.Forms.GroupBox)
+                {
+                    control.ForeColor = groupFore;
+
+                    foreach (Control groupBoxControl in control.Controls)
+                    {
+                        if (groupBoxControl is System.Windows.Forms.Button)
+                        {
+                            ((System.Windows.Forms.Button)groupBoxControl).BackColor = btnBack;
+                            ((System.Windows.Forms.Button)groupBoxControl).ForeColor = btnFore;
+                        }
+                        if (groupBoxControl is System.Windows.Forms.TextBox)
+                        {
+                            ((System.Windows.Forms.TextBox)groupBoxControl).BackColor = textboxBack;
+                            ((System.Windows.Forms.TextBox)groupBoxControl).ForeColor = textboxFore;
+                        }
+                    }
+                }
+                if (control is System.Windows.Forms.Button)
+                {
+                    ((System.Windows.Forms.Button)control).BackColor = btnBack;
+                    ((System.Windows.Forms.Button)control).ForeColor = btnFore;
+                }
+            }
+
+        }
+        private void ThemeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ToolStripMenuItem clickedItem = (ToolStripMenuItem)sender;
+
+            foreach (ToolStripMenuItem item in themeToolStripMenuItem.DropDownItems)
+            {
+                item.Checked = (item == clickedItem);
+            }
+
+            if (lightToolStripMenuItem.Checked)
+            {
+                Theme("light");
+                lightToolStripMenuItem.Checked = false;
+            }
+            else if (darkToolStripMenuItem.Checked)
+            {
+                Theme("dark");
+                darkToolStripMenuItem.Checked = false;
+            }
+            else if (catppuccinToolStripMenuItem.Checked)
+            {
+                Theme("catppuccin");
+                catppuccinToolStripMenuItem.Checked = false;
+            }
+        }
+        private void btnLight_Click(object sender, EventArgs e)
+        {
+            Theme("light");
+        }
+        private void btnDark_Click(object sender, EventArgs e)
+        {
+            Theme("dark");
+        }
+        private void btnCatppuccin_Click(object sender, EventArgs e)
+        {
+            Theme("catppuccin");
+        }
+
+        #endregion
+
     }
 }
