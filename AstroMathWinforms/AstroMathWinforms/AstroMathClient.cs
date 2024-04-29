@@ -14,7 +14,7 @@ namespace AstroMathWinforms
 {
     public partial class AstroClient : Form
     {
-        Process process = new Process();
+        readonly Process process = new Process();
 
         public AstroClient()
         {
@@ -24,66 +24,11 @@ namespace AstroMathWinforms
 
         #region Server Connection
         const string address = "net.pipe://localhost/netpipeAstro";
-        static NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
-        static EndpointAddress ep = new EndpointAddress(address);
-        IAstroContract astroContract =
+        static readonly NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
+        static readonly EndpointAddress ep = new EndpointAddress(address);
+        readonly IAstroContract astroContract =
         ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
         #endregion
-
-        private void fontStyleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FontDialog fontDialog = new FontDialog();
-
-            fontDialog.ShowDialog();
-
-            Font = fontDialog.Font;
-        }
-
-        private void backgroundColorToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ColorDialog colorDialog = new ColorDialog();
-            if (colorDialog.ShowDialog() == DialogResult.OK)
-            {
-                BackColor = colorDialog.Color;
-                listViewData.BackColor = colorDialog.Color;
-                Color oppositeColor = Color.FromArgb(colorDialog.Color.ToArgb() ^ 0xffffff);
-                ForeColor = oppositeColor;
-                listViewData.ForeColor = oppositeColor;
-                menuStrip.BackColor = colorDialog.Color;
-                menuStrip.ForeColor = oppositeColor;
-
-                foreach (Control control in Controls)
-                {
-                    if (control is System.Windows.Forms.GroupBox)
-                    {
-                        control.ForeColor = oppositeColor;
-
-                        foreach (Control groupBoxControl in control.Controls)
-                        {
-                            if (groupBoxControl is System.Windows.Forms.Button)
-                            {
-                                ((System.Windows.Forms.Button)groupBoxControl).BackColor = BackColor;
-                                ((System.Windows.Forms.Button)groupBoxControl).ForeColor = oppositeColor;
-                            }
-                            if (groupBoxControl is System.Windows.Forms.TextBox)
-                            {
-                                ((System.Windows.Forms.TextBox)groupBoxControl).BackColor = BackColor;
-                                ((System.Windows.Forms.TextBox)groupBoxControl).ForeColor = oppositeColor;
-                            }
-                        }
-                    }
-                    if (control is System.Windows.Forms.Button)
-                    {
-                        ((System.Windows.Forms.Button)control).BackColor = BackColor;
-                        ((System.Windows.Forms.Button)control).ForeColor = ForeColor;
-                    }
-                }
-            }
-
-        }
-
-
-
 
         #region Server processing
 
@@ -95,7 +40,7 @@ namespace AstroMathWinforms
             }
         }
 
-        private void btnCalculate_Click(object sender, EventArgs e)
+        private void BtnCalculate_Click(object sender, EventArgs e)
         {
             double observed;
             double rest;
@@ -154,8 +99,19 @@ namespace AstroMathWinforms
         }
         #endregion
 
+        #region Font Styling
+        private void FontStyleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FontDialog fontDialog = new FontDialog();
+
+            fontDialog.ShowDialog();
+
+            Font = fontDialog.Font;
+        }
+        #endregion
+
         #region Language CultureInfo & Btns
-        private void updateLanguage(string localisation)
+        private void UpdateLanguage(string localisation)
         {
             CultureInfo newCulture = new CultureInfo(localisation);
             Thread.CurrentThread.CurrentCulture = newCulture;
@@ -177,32 +133,29 @@ namespace AstroMathWinforms
 
             if (englishToolStripMenuItem.Checked)
             {
-                Theme("light");
-                englishToolStripMenuItem.Checked = false;
+                UpdateLanguage("en-US");
             }
             else if (frenchToolStripMenuItem.Checked)
             {
-                Theme("dark");
-                frenchToolStripMenuItem.Checked = false;
+                UpdateLanguage("fr-FR");
             }
             else if (germanToolStripMenuItem.Checked)
             {
-                Theme("catppuccin");
-                germanToolStripMenuItem.Checked = false;
+                UpdateLanguage("de-DE");
             }
         }
-        private void btnUK_Click(object sender, EventArgs e)
+        private void BtnUK_Click(object sender, EventArgs e)
         {
-            updateLanguage("en-US");
+            UpdateLanguage("en-US");
         }
-        private void btnFrance_Click(object sender, EventArgs e)
+        private void BtnFrance_Click(object sender, EventArgs e)
         {
-            updateLanguage("fr-FR");
+            UpdateLanguage("fr-FR");
         }
 
-        private void btnGerman_Click(object sender, EventArgs e)
+        private void BtnGerman_Click(object sender, EventArgs e)
         {
-            updateLanguage("de-DE");
+            UpdateLanguage("de-DE");
         }
         #endregion
 
@@ -279,22 +232,22 @@ namespace AstroMathWinforms
 
                     foreach (Control groupBoxControl in control.Controls)
                     {
-                        if (groupBoxControl is System.Windows.Forms.Button)
+                        if (groupBoxControl is System.Windows.Forms.Button button1)
                         {
-                            ((System.Windows.Forms.Button)groupBoxControl).BackColor = btnBack;
-                            ((System.Windows.Forms.Button)groupBoxControl).ForeColor = btnFore;
+                            button1.BackColor = btnBack;
+                            button1.ForeColor = btnFore;
                         }
-                        if (groupBoxControl is System.Windows.Forms.TextBox)
+                        if (groupBoxControl is System.Windows.Forms.TextBox box)
                         {
-                            ((System.Windows.Forms.TextBox)groupBoxControl).BackColor = textboxBack;
-                            ((System.Windows.Forms.TextBox)groupBoxControl).ForeColor = textboxFore;
+                            box.BackColor = textboxBack;
+                            box.ForeColor = textboxFore;
                         }
                     }
                 }
-                if (control is System.Windows.Forms.Button)
+                if (control is System.Windows.Forms.Button button)
                 {
-                    ((System.Windows.Forms.Button)control).BackColor = btnBack;
-                    ((System.Windows.Forms.Button)control).ForeColor = btnFore;
+                    button.BackColor = btnBack;
+                    button.ForeColor = btnFore;
                 }
             }
 
@@ -324,20 +277,59 @@ namespace AstroMathWinforms
                 catppuccinToolStripMenuItem.Checked = false;
             }
         }
-        private void btnLight_Click(object sender, EventArgs e)
+        private void BtnLight_Click(object sender, EventArgs e)
         {
             Theme("light");
         }
-        private void btnDark_Click(object sender, EventArgs e)
+        private void BtnDark_Click(object sender, EventArgs e)
         {
             Theme("dark");
         }
-        private void btnCatppuccin_Click(object sender, EventArgs e)
+        private void BtnCatppuccin_Click(object sender, EventArgs e)
         {
             Theme("catppuccin");
         }
+        private void BackgroundColorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorDialog = new ColorDialog();
+            if (colorDialog.ShowDialog() == DialogResult.OK)
+            {
+                BackColor = colorDialog.Color;
+                listViewData.BackColor = colorDialog.Color;
+                Color oppositeColor = Color.FromArgb(colorDialog.Color.ToArgb() ^ 0xffffff);
+                ForeColor = oppositeColor;
+                listViewData.ForeColor = oppositeColor;
+                menuStrip.BackColor = colorDialog.Color;
+                menuStrip.ForeColor = oppositeColor;
 
+                foreach (Control control in Controls)
+                {
+                    if (control is System.Windows.Forms.GroupBox)
+                    {
+                        control.ForeColor = oppositeColor;
+
+                        foreach (Control groupBoxControl in control.Controls)
+                        {
+                            if (groupBoxControl is System.Windows.Forms.Button button1)
+                            {
+                                button1.BackColor = BackColor;
+                                button1.ForeColor = oppositeColor;
+                            }
+                            if (groupBoxControl is System.Windows.Forms.TextBox box)
+                            {
+                                box.BackColor = BackColor;
+                                box.ForeColor = oppositeColor;
+                            }
+                        }
+                    }
+                    if (control is System.Windows.Forms.Button button)
+                    {
+                        button.BackColor = BackColor;
+                        button.ForeColor = ForeColor;
+                    }
+                }
+            }
+        }
         #endregion
-
     }
 }

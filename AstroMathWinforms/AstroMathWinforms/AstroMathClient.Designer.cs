@@ -84,82 +84,84 @@
             // 
             // menuStrip
             // 
-            resources.ApplyResources(this.menuStrip, "menuStrip");
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.LanguageToolStripMenuItem,
             this.fontStyleToolStripMenuItem,
             this.themeToolStripMenuItem,
             this.backgroundColorToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip, "menuStrip");
             this.menuStrip.Name = "menuStrip";
             // 
             // LanguageToolStripMenuItem
             // 
-            resources.ApplyResources(this.LanguageToolStripMenuItem, "LanguageToolStripMenuItem");
             this.LanguageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.englishToolStripMenuItem,
             this.frenchToolStripMenuItem,
             this.germanToolStripMenuItem});
             this.LanguageToolStripMenuItem.Name = "LanguageToolStripMenuItem";
+            resources.ApplyResources(this.LanguageToolStripMenuItem, "LanguageToolStripMenuItem");
             this.LanguageToolStripMenuItem.Click += new System.EventHandler(this.LanguageToolStripMenuItem_Click);
             // 
             // englishToolStripMenuItem
             // 
-            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
+            this.englishToolStripMenuItem.Click += new System.EventHandler(this.LanguageToolStripMenuItem_Click);
             // 
             // frenchToolStripMenuItem
             // 
-            resources.ApplyResources(this.frenchToolStripMenuItem, "frenchToolStripMenuItem");
             this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
+            resources.ApplyResources(this.frenchToolStripMenuItem, "frenchToolStripMenuItem");
+            this.frenchToolStripMenuItem.Click += new System.EventHandler(this.LanguageToolStripMenuItem_Click);
             // 
             // germanToolStripMenuItem
             // 
-            resources.ApplyResources(this.germanToolStripMenuItem, "germanToolStripMenuItem");
             this.germanToolStripMenuItem.Name = "germanToolStripMenuItem";
+            resources.ApplyResources(this.germanToolStripMenuItem, "germanToolStripMenuItem");
+            this.germanToolStripMenuItem.Click += new System.EventHandler(this.LanguageToolStripMenuItem_Click);
             // 
             // fontStyleToolStripMenuItem
             // 
-            resources.ApplyResources(this.fontStyleToolStripMenuItem, "fontStyleToolStripMenuItem");
             this.fontStyleToolStripMenuItem.Name = "fontStyleToolStripMenuItem";
-            this.fontStyleToolStripMenuItem.Click += new System.EventHandler(this.fontStyleToolStripMenuItem_Click);
+            resources.ApplyResources(this.fontStyleToolStripMenuItem, "fontStyleToolStripMenuItem");
+            this.fontStyleToolStripMenuItem.Click += new System.EventHandler(this.FontStyleToolStripMenuItem_Click);
             // 
             // themeToolStripMenuItem
             // 
-            resources.ApplyResources(this.themeToolStripMenuItem, "themeToolStripMenuItem");
             this.themeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lightToolStripMenuItem,
             this.darkToolStripMenuItem,
             this.catppuccinToolStripMenuItem});
             this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
+            resources.ApplyResources(this.themeToolStripMenuItem, "themeToolStripMenuItem");
             // 
             // lightToolStripMenuItem
             // 
-            resources.ApplyResources(this.lightToolStripMenuItem, "lightToolStripMenuItem");
             this.lightToolStripMenuItem.Name = "lightToolStripMenuItem";
+            resources.ApplyResources(this.lightToolStripMenuItem, "lightToolStripMenuItem");
             this.lightToolStripMenuItem.Click += new System.EventHandler(this.ThemeToolStripMenuItem_Click);
             // 
             // darkToolStripMenuItem
             // 
-            resources.ApplyResources(this.darkToolStripMenuItem, "darkToolStripMenuItem");
             this.darkToolStripMenuItem.Name = "darkToolStripMenuItem";
+            resources.ApplyResources(this.darkToolStripMenuItem, "darkToolStripMenuItem");
             this.darkToolStripMenuItem.Click += new System.EventHandler(this.ThemeToolStripMenuItem_Click);
             // 
             // catppuccinToolStripMenuItem
             // 
-            resources.ApplyResources(this.catppuccinToolStripMenuItem, "catppuccinToolStripMenuItem");
             this.catppuccinToolStripMenuItem.Name = "catppuccinToolStripMenuItem";
+            resources.ApplyResources(this.catppuccinToolStripMenuItem, "catppuccinToolStripMenuItem");
             this.catppuccinToolStripMenuItem.Click += new System.EventHandler(this.ThemeToolStripMenuItem_Click);
             // 
             // backgroundColorToolStripMenuItem
             // 
-            resources.ApplyResources(this.backgroundColorToolStripMenuItem, "backgroundColorToolStripMenuItem");
             this.backgroundColorToolStripMenuItem.Name = "backgroundColorToolStripMenuItem";
-            this.backgroundColorToolStripMenuItem.Click += new System.EventHandler(this.backgroundColorToolStripMenuItem_Click);
+            resources.ApplyResources(this.backgroundColorToolStripMenuItem, "backgroundColorToolStripMenuItem");
+            this.backgroundColorToolStripMenuItem.Click += new System.EventHandler(this.BackgroundColorToolStripMenuItem_Click);
             // 
             // groupExtras
             // 
-            resources.ApplyResources(this.groupExtras, "groupExtras");
             this.groupExtras.Controls.Add(this.btnCatppuccin);
             this.groupExtras.Controls.Add(this.btnDark);
             this.groupExtras.Controls.Add(this.btnLight);
@@ -168,6 +170,7 @@
             this.groupExtras.Controls.Add(this.btnUK);
             this.groupExtras.Controls.Add(this.btnBackgroundColor);
             this.groupExtras.Controls.Add(this.btnFontStyle);
+            resources.ApplyResources(this.groupExtras, "groupExtras");
             this.groupExtras.Name = "groupExtras";
             this.groupExtras.TabStop = false;
             // 
@@ -176,60 +179,59 @@
             resources.ApplyResources(this.btnCatppuccin, "btnCatppuccin");
             this.btnCatppuccin.Name = "btnCatppuccin";
             this.btnCatppuccin.UseVisualStyleBackColor = true;
-            this.btnCatppuccin.Click += new System.EventHandler(this.btnCatppuccin_Click);
+            this.btnCatppuccin.Click += new System.EventHandler(this.BtnCatppuccin_Click);
             // 
             // btnDark
             // 
             resources.ApplyResources(this.btnDark, "btnDark");
             this.btnDark.Name = "btnDark";
             this.btnDark.UseVisualStyleBackColor = true;
-            this.btnDark.Click += new System.EventHandler(this.btnDark_Click);
+            this.btnDark.Click += new System.EventHandler(this.BtnDark_Click);
             // 
             // btnLight
             // 
             resources.ApplyResources(this.btnLight, "btnLight");
             this.btnLight.Name = "btnLight";
             this.btnLight.UseVisualStyleBackColor = true;
-            this.btnLight.Click += new System.EventHandler(this.btnLight_Click);
+            this.btnLight.Click += new System.EventHandler(this.BtnLight_Click);
             // 
             // btnGerman
             // 
             resources.ApplyResources(this.btnGerman, "btnGerman");
             this.btnGerman.Name = "btnGerman";
             this.btnGerman.UseVisualStyleBackColor = true;
-            this.btnGerman.Click += new System.EventHandler(this.btnGerman_Click);
+            this.btnGerman.Click += new System.EventHandler(this.BtnGerman_Click);
             // 
             // btnFrance
             // 
             resources.ApplyResources(this.btnFrance, "btnFrance");
             this.btnFrance.Name = "btnFrance";
             this.btnFrance.UseVisualStyleBackColor = true;
-            this.btnFrance.Click += new System.EventHandler(this.btnFrance_Click);
+            this.btnFrance.Click += new System.EventHandler(this.BtnFrance_Click);
             // 
             // btnUK
             // 
             resources.ApplyResources(this.btnUK, "btnUK");
             this.btnUK.Name = "btnUK";
             this.btnUK.UseVisualStyleBackColor = true;
-            this.btnUK.Click += new System.EventHandler(this.btnUK_Click);
+            this.btnUK.Click += new System.EventHandler(this.BtnUK_Click);
             // 
             // btnBackgroundColor
             // 
             resources.ApplyResources(this.btnBackgroundColor, "btnBackgroundColor");
             this.btnBackgroundColor.Name = "btnBackgroundColor";
             this.btnBackgroundColor.UseVisualStyleBackColor = true;
-            this.btnBackgroundColor.Click += new System.EventHandler(this.backgroundColorToolStripMenuItem_Click);
+            this.btnBackgroundColor.Click += new System.EventHandler(this.BackgroundColorToolStripMenuItem_Click);
             // 
             // btnFontStyle
             // 
             resources.ApplyResources(this.btnFontStyle, "btnFontStyle");
             this.btnFontStyle.Name = "btnFontStyle";
             this.btnFontStyle.UseVisualStyleBackColor = true;
-            this.btnFontStyle.Click += new System.EventHandler(this.fontStyleToolStripMenuItem_Click);
+            this.btnFontStyle.Click += new System.EventHandler(this.FontStyleToolStripMenuItem_Click);
             // 
             // listViewData
             // 
-            resources.ApplyResources(this.listViewData, "listViewData");
             this.listViewData.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.starVelocity,
             this.starDistance,
@@ -237,6 +239,7 @@
             this.eventHorizon});
             this.listViewData.FullRowSelect = true;
             this.listViewData.HideSelection = false;
+            resources.ApplyResources(this.listViewData, "listViewData");
             this.listViewData.Name = "listViewData";
             this.listViewData.UseCompatibleStateImageBehavior = false;
             this.listViewData.View = System.Windows.Forms.View.Details;
@@ -259,11 +262,11 @@
             // 
             // groupStarVelocity
             // 
-            resources.ApplyResources(this.groupStarVelocity, "groupStarVelocity");
             this.groupStarVelocity.Controls.Add(this.textBoxRest);
             this.groupStarVelocity.Controls.Add(this.textBoxObserved);
             this.groupStarVelocity.Controls.Add(this.lvlRest);
             this.groupStarVelocity.Controls.Add(this.lblObserved);
+            resources.ApplyResources(this.groupStarVelocity, "groupStarVelocity");
             this.groupStarVelocity.Name = "groupStarVelocity";
             this.groupStarVelocity.TabStop = false;
             // 
@@ -289,9 +292,9 @@
             // 
             // groupStarDistance
             // 
-            resources.ApplyResources(this.groupStarDistance, "groupStarDistance");
             this.groupStarDistance.Controls.Add(this.textBoxParralax);
             this.groupStarDistance.Controls.Add(this.lblParralax);
+            resources.ApplyResources(this.groupStarDistance, "groupStarDistance");
             this.groupStarDistance.Name = "groupStarDistance";
             this.groupStarDistance.TabStop = false;
             // 
@@ -310,13 +313,13 @@
             resources.ApplyResources(this.btnCalculate, "btnCalculate");
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
-            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
+            this.btnCalculate.Click += new System.EventHandler(this.BtnCalculate_Click);
             // 
             // groupTemperature
             // 
-            resources.ApplyResources(this.groupTemperature, "groupTemperature");
             this.groupTemperature.Controls.Add(this.textBoxCelsius);
             this.groupTemperature.Controls.Add(this.lblCelsius);
+            resources.ApplyResources(this.groupTemperature, "groupTemperature");
             this.groupTemperature.Name = "groupTemperature";
             this.groupTemperature.TabStop = false;
             // 
@@ -332,11 +335,11 @@
             // 
             // groupEventHorizon
             // 
-            resources.ApplyResources(this.groupEventHorizon, "groupEventHorizon");
             this.groupEventHorizon.Controls.Add(this.textBoxExponent);
             this.groupEventHorizon.Controls.Add(this.lblMassExponent);
             this.groupEventHorizon.Controls.Add(this.textBoxMass);
             this.groupEventHorizon.Controls.Add(this.lblMass);
+            resources.ApplyResources(this.groupEventHorizon, "groupEventHorizon");
             this.groupEventHorizon.Name = "groupEventHorizon";
             this.groupEventHorizon.TabStop = false;
             // 
