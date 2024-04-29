@@ -1,0 +1,1332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 553</value>
+  </data>
+  <data name="&gt;&gt;fontDialog1.Name" xml:space="preserve">
+    <value>fontDialog1</value>
+  </data>
+  <data name="temperature.Text" xml:space="preserve">
+    <value>Temperature (K)</value>
+  </data>
+  <data name="&gt;&gt;starDistance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lvlRest.Text" xml:space="preserve">
+    <value>Rest Wavelength (λ)</value>
+  </data>
+  <data name="&gt;&gt;listViewData.Name" xml:space="preserve">
+    <value>listViewData</value>
+  </data>
+  <data name="textBoxExponent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 22</value>
+  </data>
+  <data name="lblParralax.Text" xml:space="preserve">
+    <value>Parralax Angle (Arcseconds)</value>
+  </data>
+  <data name="groupStarDistance.Text" xml:space="preserve">
+    <value>Star Distance (pc)</value>
+  </data>
+  <data name="&gt;&gt;groupTemperature.Name" xml:space="preserve">
+    <value>groupTemperature</value>
+  </data>
+  <data name="&gt;&gt;btnUK.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;textBoxObserved.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;textBoxMass.Parent" xml:space="preserve">
+    <value>groupEventHorizon</value>
+  </data>
+  <data name="starDistance.Text" xml:space="preserve">
+    <value>Star Distance (pc)</value>
+  </data>
+  <data name="&gt;&gt;temperature.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lvlRest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblMassExponent.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;darkToolStripMenuItem.Name" xml:space="preserve">
+    <value>darkToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;lblObserved.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnUK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 63</value>
+  </data>
+  <data name="&gt;&gt;btnFontStyle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnFontStyle.Parent" xml:space="preserve">
+    <value>groupExtras</value>
+  </data>
+  <data name="&gt;&gt;groupExtras.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="textBoxObserved.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 42</value>
+  </data>
+  <data name="groupStarDistance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 190</value>
+  </data>
+  <data name="&gt;&gt;textBoxObserved.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMassExponent.Name" xml:space="preserve">
+    <value>lblMassExponent</value>
+  </data>
+  <data name="eventHorizon.Text" xml:space="preserve">
+    <value>Event Horizon (m)</value>
+  </data>
+  <data name="btnFontStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 66</value>
+  </data>
+  <data name="&gt;&gt;spanishToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxExponent.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnBackgroundColor.Text" xml:space="preserve">
+    <value>Background Color</value>
+  </data>
+  <data name="&gt;&gt;lblMass.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;starDistance.Name" xml:space="preserve">
+    <value>starDistance</value>
+  </data>
+  <data name="&gt;&gt;lblMassExponent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxCelsius.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblObserved.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnUK.Parent" xml:space="preserve">
+    <value>groupExtras</value>
+  </data>
+  <data name="btnUK.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        RU5ErkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;btnDark.Parent" xml:space="preserve">
+    <value>groupExtras</value>
+  </data>
+  <data name="&gt;&gt;textBoxRest.Parent" xml:space="preserve">
+    <value>groupStarVelocity</value>
+  </data>
+  <data name="&gt;&gt;englishToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spanishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Spanish</value>
+  </data>
+  <data name="&gt;&gt;groupStarVelocity.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblObserved.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnCalculate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 30</value>
+  </data>
+  <data name="&gt;&gt;colorDialog1.Name" xml:space="preserve">
+    <value>colorDialog1</value>
+  </data>
+  <data name="&gt;&gt;eventHorizon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnCalculate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 246</value>
+  </data>
+  <data name="&gt;&gt;fontDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FontDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnFontStyle.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lblObserved.Name" xml:space="preserve">
+    <value>lblObserved</value>
+  </data>
+  <data name="btnGerman.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAABQAAAAMACAYAAAB7NMrNAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAB3RJTUUH6AEXFxsxJ+wLjAAAFcVJREFU
+        eF7t2EENwDAQA8HwB1cGxZIWgBGs5qS5hyHs+e8CAAAAAFlzBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAA
+        AADQMEcAAAAAoGGOAAAAAEDDHAEAAACAhjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQ
+        MEcAAAAAoGGOAAAAAEDDHAEAAACAhjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcA
+        AAAAoGGOAAAAAEDDHAEAAACAhjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAA
+        oGGOAAAAAEDDHAEAAACAhjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAAoGGO
+        AAAAAEDDHAEAAACAhjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAAoGGOAAAA
+        AEDDHAEAAACAhjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAAoGGOAAAAAEDD
+        HAEAAACAhjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAAoGGOAAAAAEDDHAEA
+        AACAhjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAAoGGOAAAAAEDDHAEAAACA
+        hjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAAoGGOAAAAAEDDHAEAAACAhjkC
+        AAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAAoGGOAAAAAEDDHAEAAACAhjkCAAAA
+        AA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAAoGGOAAAAAEDDHAEAAACAhjkCAAAAAA1z
+        BAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAAoGGOAAAAAEDDHAEAAACAhjkCAAAAAA1zBAAA
+        AAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAAoGGOAAAAAEDDHAEAAACAhjkCAAAAAA1zBAAAAAAa
+        5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAAoGGOAAAAAEDDHAEAAACAhjkCAAAAAA1zBAAAAAAa5ggA
+        AAAANMwRAAAAAGiYIwAAAADQMEcAAAAAoGGOAAAAAEDDHAEAAACAhjkCAAAAAA1zBAAAAAAa5ggAAAAA
+        NMwRAAAAAGiYIwAAAADQMEcAAAAAoGGOAAAAAEDDHAEAAACAhjkCAAAAAA1zBAAAAAAa5ggAAAAANMwR
+        AAAAAGiYIwAAAADQMEcAAAAAoGGOAAAAAEDDHAEAAACAhjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAA
+        AGiYIwAAAADQMEcAAAAAoGGOAAAAAEDDHAEAAACAhjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiY
+        IwAAAADQMEcAAAAAoGGOAAAAAEDDHAEAAACAhjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAA
+        AADQMEcAAAAAoGGOAAAAAEDDHAEAAACAhjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQ
+        MEcAAAAAoGGOAAAAAEDDHAEAAACAhjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcA
+        AAAAoGGOAAAAAEDDHAEAAACAhjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAA
+        oGGOAAAAAEDDHAEAAACAhjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAAoGGO
+        AAAAAEDDHAEAAACAhjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAAoGGOAAAA
+        AEDDHAEAAACAhjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAAoGGOAAAAAEDD
+        HAEAAACAhjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAAoGGOAAAAAEDDHAEA
+        AACAhjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAAoGGOAAAAAEDDHAEAAACA
+        hjkCAAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAAoGGOAAAAAEDDHAEAAACAhjkC
+        AAAAAA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAAoGGOAAAAAEDDHAEAAACAhjkCAAAA
+        AA1zBAAAAAAa5ggAAAAANMwRAAAAAGiYIwAAAADQMEcAAAAAoGGOAAAAAEDDHAEAAACAgvd/AAAAAECT
+        AAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAI
+        AAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAA
+        AABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAA
+        YQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGEC
+        IAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAA
+        AAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAA
+        AIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACE
+        CYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmA
+        AAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAA
+        AAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAA
+        ECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAm
+        AAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgAC
+        AAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAA
+        AECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABA
+        mAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgA
+        CAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgA
+        AAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAA
+        AGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABh
+        AiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIg
+        AAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAA
+        AACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAA
+        hAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJ
+        gAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAA
+        AAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAA
+        ABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQ
+        JgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYA
+        AgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIA
+        AABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAA
+        QJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECY
+        AAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAI
+        AAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQdu5zLgAAAADQJAAC
+        AAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAA
+        AECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABA
+        mAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgA
+        CAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgA
+        AAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAA
+        AGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABh
+        AiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIg
+        AAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAA
+        AACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAA
+        hAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJ
+        gAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAA
+        AAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAA
+        ABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQ
+        JgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYA
+        AgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIA
+        AABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAA
+        QJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECY
+        AAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAI
+        AAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAA
+        AABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAA
+        YQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGEC
+        IAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAA
+        AAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAA
+        AIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACE
+        CYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmA
+        AAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAA
+        AAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAA
+        ECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAm
+        AAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAAAECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgAC
+        AAAAQJgACAAAAABhAiAAAAAAhAmAAAAAABAmAAIAAABAmAAIAAAAAGECIAAAAACECYAAAAAAECYAAgAA
+        AECYAAgAAAAAYQIgAAAAAIQJgAAAAAAQJgACAAAAQJgACAAAAABhAiAAAAAAZJ37ASLvp/0Pto3eAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="groupStarVelocity.Text" xml:space="preserve">
+    <value>Star Velocity (m/s)</value>
+  </data>
+  <data name="fontStyleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 24</value>
+  </data>
+  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 26</value>
+  </data>
+  <data name="&gt;&gt;groupExtras.Name" xml:space="preserve">
+    <value>groupExtras</value>
+  </data>
+  <data name="textBoxObserved.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 22</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 26</value>
+  </data>
+  <data name="&gt;&gt;textBoxMass.Name" xml:space="preserve">
+    <value>textBoxMass</value>
+  </data>
+  <data name="&gt;&gt;lblMassExponent.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblCelsius.Parent" xml:space="preserve">
+    <value>groupTemperature</value>
+  </data>
+  <data name="&gt;&gt;groupStarVelocity.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;frenchToolStripMenuItem.Name" xml:space="preserve">
+    <value>frenchToolStripMenuItem</value>
+  </data>
+  <data name="lblObserved.Text" xml:space="preserve">
+    <value>Observed Wavelength (λ)</value>
+  </data>
+  <data name="lblCelsius.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 16</value>
+  </data>
+  <data name="&gt;&gt;btnLight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxExponent.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="backgroundColorToolStripMenuItem.Text" xml:space="preserve">
+    <value>Background Color</value>
+  </data>
+  <data name="btnGerman.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 63</value>
+  </data>
+  <data name="btnFrance.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;lightToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupStarDistance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 86</value>
+  </data>
+  <data name="&gt;&gt;btnGerman.Parent" xml:space="preserve">
+    <value>groupExtras</value>
+  </data>
+  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="&gt;&gt;groupStarDistance.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBoxMass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 46</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnFrance.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="lblMass.Text" xml:space="preserve">
+    <value>Mass (kg)</value>
+  </data>
+  <data name="groupTemperature.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 49</value>
+  </data>
+  <data name="&gt;&gt;groupTemperature.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnCatppuccin.Name" xml:space="preserve">
+    <value>btnCatppuccin</value>
+  </data>
+  <data name="&gt;&gt;themeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupTemperature.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblMass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 27</value>
+  </data>
+  <data name="&gt;&gt;btnCatppuccin.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="btnDark.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;lblMass.Parent" xml:space="preserve">
+    <value>groupEventHorizon</value>
+  </data>
+  <data name="btnUK.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="groupStarVelocity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 49</value>
+  </data>
+  <data name="groupEventHorizon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 147</value>
+  </data>
+  <data name="&gt;&gt;btnCalculate.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblMassExponent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 49</value>
+  </data>
+  <data name="groupStarVelocity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 134</value>
+  </data>
+  <data name="listViewData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 301</value>
+  </data>
+  <data name="lvlRest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 73</value>
+  </data>
+  <data name="&gt;&gt;textBoxCelsius.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnBackgroundColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxRest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 92</value>
+  </data>
+  <data name="&gt;&gt;lvlRest.Parent" xml:space="preserve">
+    <value>groupStarVelocity</value>
+  </data>
+  <data name="lblCelsius.Text" xml:space="preserve">
+    <value>Celsius (°C)</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AstroClient</value>
+  </data>
+  <data name="lblMass.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="spanishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 26</value>
+  </data>
+  <data name="&gt;&gt;btnFrance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCelsius.Name" xml:space="preserve">
+    <value>lblCelsius</value>
+  </data>
+  <data name="&gt;&gt;btnLight.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;colorDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColorDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="darkToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 26</value>
+  </data>
+  <data name="textBoxParralax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 22</value>
+  </data>
+  <data name="&gt;&gt;englishToolStripMenuItem.Name" xml:space="preserve">
+    <value>englishToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblParralax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 27</value>
+  </data>
+  <data name="catppuccinToolStripMenuItem.Text" xml:space="preserve">
+    <value>Catppuccin</value>
+  </data>
+  <data name="btnFrance.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAB9AAAAU1BAMAAAC5AEJSAAAABGdBTUEAALGPC/xhBQAAAA9QTFRFACOV
+        7Sk5WnG683V/////2hFILgAAHg9JREFUeNrt00EBgAAQBKGtcB1sov0zWWKe0IERej4y79EZIdFDopdG
+        SPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQP
+        iV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOil
+        ERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHR
+        Q6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6
+        aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI
+        9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+J
+        Xhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUR
+        Ej0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFD
+        opdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpp
+        hEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0
+        kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4le
+        GiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRES
+        PSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOi
+        l0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmE
+        RA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ
+        6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4a
+        IdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9
+        JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KX
+        Rkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRE
+        D4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDo
+        pRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh
+        0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0k
+        emmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdG
+        SPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQP
+        iV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOil
+        ERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHR
+        Q6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6
+        aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI
+        9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+J
+        Xhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUR
+        Ej0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFD
+        opdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpp
+        hEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0
+        kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4le
+        GiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRES
+        PSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOi
+        l0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmE
+        RA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ
+        6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4a
+        IdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9
+        JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KX
+        Rkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRE
+        D4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDo
+        pRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh
+        0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0k
+        emmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdG
+        SPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQP
+        iV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOil
+        ERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHR
+        Q6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6
+        aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI
+        9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+J
+        Xhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUR
+        Ej0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFD
+        opdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpp
+        hEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0
+        kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4le
+        GiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRES
+        PSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOi
+        l0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmE
+        RA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ
+        6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4a
+        IdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9
+        JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KX
+        Rkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRE
+        D4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDo
+        pRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh
+        0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0k
+        emmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdG
+        SPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQP
+        iV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOil
+        ERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHR
+        Q6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6
+        aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI
+        9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+J
+        Xhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUR
+        Ej0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFD
+        opdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpp
+        hEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0
+        kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4le
+        GiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRES
+        PSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOi
+        l0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmE
+        RA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ
+        6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4a
+        IdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9
+        JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KX
+        Rkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRE
+        D4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDo
+        pRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh
+        0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0k
+        emmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdG
+        SPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQP
+        iV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOil
+        ERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHR
+        Q6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6
+        aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI
+        9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+J
+        Xhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUR
+        Ej0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFD
+        opdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpp
+        hEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0
+        kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4le
+        GiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRES
+        PSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOi
+        l0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmE
+        RA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ
+        6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4a
+        IdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9
+        JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KX
+        Rkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRE
+        D4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDo
+        pRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh
+        0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0k
+        emmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdG
+        SPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQP
+        iV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOil
+        ERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHR
+        Q6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6
+        aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI
+        9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+J
+        Xhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUR
+        Ej0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFD
+        opdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpp
+        hEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4leGiHRQ6KXRkj0
+        kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRESPSR6aYRED4le
+        GiHRQ6KXRkj0kOilERI9JHpphEQPiV4aIdFDopdGSPSQ6KUREj0kemmERA+JXhoh0UOil0ZI9JDopRES
+        PSR6aYRED4leGiHRQ6KXRkj0kOilERI9JHpphEQPid65+wFgEpEFW3AhZQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnBackgroundColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 30</value>
+  </data>
+  <data name="&gt;&gt;btnDark.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxCelsius.Name" xml:space="preserve">
+    <value>textBoxCelsius</value>
+  </data>
+  <data name="btnUK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 146</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Astro Math Client</value>
+  </data>
+  <data name="&gt;&gt;backgroundColorToolStripMenuItem.Name" xml:space="preserve">
+    <value>backgroundColorToolStripMenuItem</value>
+  </data>
+  <data name="btnDark.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 30</value>
+  </data>
+  <data name="&gt;&gt;textBoxRest.Name" xml:space="preserve">
+    <value>textBoxRest</value>
+  </data>
+  <data name="&gt;&gt;frenchToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lvlRest.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnGerman.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="lblMass.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnFontStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="groupTemperature.Text" xml:space="preserve">
+    <value>Temperature (K)</value>
+  </data>
+  <data name="textBoxObserved.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;groupEventHorizon.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxCelsius.Parent" xml:space="preserve">
+    <value>groupTemperature</value>
+  </data>
+  <data name="&gt;&gt;btnGerman.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="temperature.Width" type="System.Int32, mscorlib">
+    <value>170</value>
+  </data>
+  <data name="groupExtras.Text" xml:space="preserve">
+    <value>Language and Theming</value>
+  </data>
+  <data name="btnCatppuccin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 25</value>
+  </data>
+  <data name="lightToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 26</value>
+  </data>
+  <data name="listViewData.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="btnLight.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;btnFrance.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblCelsius.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fontStyleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Font Style</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxExponent.Name" xml:space="preserve">
+    <value>textBoxExponent</value>
+  </data>
+  <data name="&gt;&gt;textBoxExponent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblMassExponent.Text" xml:space="preserve">
+    <value>x10^</value>
+  </data>
+  <data name="&gt;&gt;groupExtras.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblMassExponent.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="groupExtras.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 227</value>
+  </data>
+  <data name="btnCatppuccin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 30</value>
+  </data>
+  <data name="&gt;&gt;btnFrance.Name" xml:space="preserve">
+    <value>btnFrance</value>
+  </data>
+  <data name="btnCatppuccin.Text" xml:space="preserve">
+    <value>Catppuccin</value>
+  </data>
+  <data name="&gt;&gt;groupStarVelocity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightToolStripMenuItem.Text" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="starVelocity.Text" xml:space="preserve">
+    <value>Star Velocity (m/s)</value>
+  </data>
+  <data name="&gt;&gt;btnUK.Name" xml:space="preserve">
+    <value>btnUK</value>
+  </data>
+  <data name="lblParralax.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnGerman.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;catppuccinToolStripMenuItem.Name" xml:space="preserve">
+    <value>catppuccinToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;listViewData.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btnCalculate.Name" xml:space="preserve">
+    <value>btnCalculate</value>
+  </data>
+  <data name="btnDark.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 25</value>
+  </data>
+  <data name="&gt;&gt;backgroundColorToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupStarVelocity.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="backgroundColorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 24</value>
+  </data>
+  <data name="&gt;&gt;textBoxMass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="starVelocity.Width" type="System.Int32, mscorlib">
+    <value>170</value>
+  </data>
+  <data name="&gt;&gt;groupStarDistance.Name" xml:space="preserve">
+    <value>groupStarDistance</value>
+  </data>
+  <data name="&gt;&gt;textBoxParralax.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblParralax.Parent" xml:space="preserve">
+    <value>groupStarDistance</value>
+  </data>
+  <data name="btnFrance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 146</value>
+  </data>
+  <data name="&gt;&gt;textBoxObserved.Name" xml:space="preserve">
+    <value>textBoxObserved</value>
+  </data>
+  <data name="&gt;&gt;btnLight.Name" xml:space="preserve">
+    <value>btnLight</value>
+  </data>
+  <data name="btnUK.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="&gt;&gt;btnCatppuccin.Parent" xml:space="preserve">
+    <value>groupExtras</value>
+  </data>
+  <data name="&gt;&gt;btnBackgroundColor.Parent" xml:space="preserve">
+    <value>groupExtras</value>
+  </data>
+  <data name="textBoxMass.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="themeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 24</value>
+  </data>
+  <data name="&gt;&gt;btnDark.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBoxExponent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 46</value>
+  </data>
+  <data name="btnGerman.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="&gt;&gt;lightToolStripMenuItem.Name" xml:space="preserve">
+    <value>lightToolStripMenuItem</value>
+  </data>
+  <data name="textBoxParralax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 46</value>
+  </data>
+  <data name="&gt;&gt;btnCalculate.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupStarDistance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnFontStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 30</value>
+  </data>
+  <data name="&gt;&gt;btnUK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxRest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxObserved.Parent" xml:space="preserve">
+    <value>groupStarVelocity</value>
+  </data>
+  <data name="&gt;&gt;btnGerman.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblMass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 16</value>
+  </data>
+  <data name="&gt;&gt;starVelocity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblCelsius.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 27</value>
+  </data>
+  <data name="&gt;&gt;lblObserved.Parent" xml:space="preserve">
+    <value>groupStarVelocity</value>
+  </data>
+  <data name="textBoxCelsius.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 22</value>
+  </data>
+  <data name="btnCalculate.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;textBoxMass.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lvlRest.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBoxExponent.Parent" xml:space="preserve">
+    <value>groupEventHorizon</value>
+  </data>
+  <data name="&gt;&gt;groupStarDistance.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="themeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="&gt;&gt;textBoxCelsius.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;fontStyleToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMass.Name" xml:space="preserve">
+    <value>lblMass</value>
+  </data>
+  <data name="btnBackgroundColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 104</value>
+  </data>
+  <data name="&gt;&gt;lblCelsius.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxMass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 22</value>
+  </data>
+  <data name="lblCelsius.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;temperature.Name" xml:space="preserve">
+    <value>temperature</value>
+  </data>
+  <data name="catppuccinToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 26</value>
+  </data>
+  <data name="textBoxCelsius.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 46</value>
+  </data>
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listViewData.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBoxRest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 22</value>
+  </data>
+  <data name="&gt;&gt;lblParralax.Name" xml:space="preserve">
+    <value>lblParralax</value>
+  </data>
+  <data name="&gt;&gt;textBoxParralax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblParralax.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnBackgroundColor.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblObserved.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 16</value>
+  </data>
+  <data name="&gt;&gt;btnGerman.Name" xml:space="preserve">
+    <value>btnGerman</value>
+  </data>
+  <data name="&gt;&gt;lblParralax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fontStyleToolStripMenuItem.Name" xml:space="preserve">
+    <value>fontStyleToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;spanishToolStripMenuItem.Name" xml:space="preserve">
+    <value>spanishToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;textBoxParralax.Parent" xml:space="preserve">
+    <value>groupStarDistance</value>
+  </data>
+  <data name="&gt;&gt;btnFontStyle.Name" xml:space="preserve">
+    <value>btnFontStyle</value>
+  </data>
+  <data name="listViewData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 253</value>
+  </data>
+  <data name="btnLight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 30</value>
+  </data>
+  <data name="btnCalculate.Text" xml:space="preserve">
+    <value>Calculate</value>
+  </data>
+  <data name="&gt;&gt;groupExtras.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnLight.Text" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="&gt;&gt;themeToolStripMenuItem.Name" xml:space="preserve">
+    <value>themeToolStripMenuItem</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 28</value>
+  </data>
+  <data name="lblParralax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 16</value>
+  </data>
+  <data name="&gt;&gt;btnLight.Parent" xml:space="preserve">
+    <value>groupExtras</value>
+  </data>
+  <data name="groupExtras.Location" type="System.Drawing.Point, System.Drawing">
+    <value>443, 49</value>
+  </data>
+  <data name="btnFrance.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="&gt;&gt;fontDialog2.Name" xml:space="preserve">
+    <value>fontDialog2</value>
+  </data>
+  <data name="btnFrance.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblObserved.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBoxRest.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="groupEventHorizon.Text" xml:space="preserve">
+    <value>Event Horizon (m)</value>
+  </data>
+  <data name="btnFrance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 63</value>
+  </data>
+  <data name="btnCatppuccin.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;groupEventHorizon.Name" xml:space="preserve">
+    <value>groupEventHorizon</value>
+  </data>
+  <data name="&gt;&gt;btnCatppuccin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;starVelocity.Name" xml:space="preserve">
+    <value>starVelocity</value>
+  </data>
+  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="btnDark.Text" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="&gt;&gt;btnDark.Name" xml:space="preserve">
+    <value>btnDark</value>
+  </data>
+  <data name="btnFontStyle.Text" xml:space="preserve">
+    <value>Font Style</value>
+  </data>
+  <data name="btnGerman.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 146</value>
+  </data>
+  <data name="&gt;&gt;darkToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lvlRest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 16</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="&gt;&gt;btnCalculate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMassExponent.Parent" xml:space="preserve">
+    <value>groupEventHorizon</value>
+  </data>
+  <data name="&gt;&gt;btnBackgroundColor.Name" xml:space="preserve">
+    <value>btnBackgroundColor</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;catppuccinToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 24</value>
+  </data>
+  <data name="&gt;&gt;languageToolStripMenuItem.Name" xml:space="preserve">
+    <value>languageToolStripMenuItem</value>
+  </data>
+  <data name="lblObserved.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="darkToolStripMenuItem.Text" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="&gt;&gt;languageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupTemperature.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;listViewData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupTemperature.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupTemperature.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 86</value>
+  </data>
+  <data name="&gt;&gt;lvlRest.Name" xml:space="preserve">
+    <value>lvlRest</value>
+  </data>
+  <data name="&gt;&gt;groupEventHorizon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="lvlRest.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBoxRest.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnBackgroundColor.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="starDistance.Width" type="System.Int32, mscorlib">
+    <value>170</value>
+  </data>
+  <data name="&gt;&gt;groupEventHorizon.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblCelsius.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;fontDialog2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FontDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnLight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 25</value>
+  </data>
+  <data name="&gt;&gt;btnFrance.Parent" xml:space="preserve">
+    <value>groupExtras</value>
+  </data>
+  <data name="groupEventHorizon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 86</value>
+  </data>
+  <data name="groupStarDistance.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="btnUK.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;groupStarVelocity.Name" xml:space="preserve">
+    <value>groupStarVelocity</value>
+  </data>
+  <data name="&gt;&gt;textBoxParralax.Name" xml:space="preserve">
+    <value>textBoxParralax</value>
+  </data>
+  <data name="groupExtras.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="groupEventHorizon.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="lblMassExponent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="eventHorizon.Width" type="System.Int32, mscorlib">
+    <value>170</value>
+  </data>
+  <data name="&gt;&gt;eventHorizon.Name" xml:space="preserve">
+    <value>eventHorizon</value>
+  </data>
+  <data name="textBoxParralax.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblParralax.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="fontDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>300, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colorDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>153, 17</value>
+  </metadata>
+  <metadata name="fontDialog2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>440, 17</value>
+  </metadata>
+</root>

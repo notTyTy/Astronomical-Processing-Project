@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.ServiceModel;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -22,13 +24,9 @@ namespace AstroMathWinforms
             process = Process.Start(@"ConsoleServer.exe");
             InitializeComponent();
             lightToolStripMenuItem.Checked = true;
-
-
-
-
         }
 
-        static string address = "net.pipe://localhost/netpipeAstro";
+        const string address = "net.pipe://localhost/netpipeAstro";
         static NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
         static EndpointAddress ep = new EndpointAddress(address);
         IAstroContract astroContract =
@@ -67,20 +65,23 @@ namespace AstroMathWinforms
             if (lightToolStripMenuItem.Checked)
             {
                 BackColor = default;
-
+                lightToolStripMenuItem.Checked = true;
 
                 // default theming
             }
             else if (darkToolStripMenuItem.Checked)
             {
-
+                darkToolStripMenuItem.Checked = true;
             }
             else if (catppuccinToolStripMenuItem.Checked)
             {
-
+                catppuccinToolStripMenuItem.Checked = true;
             }
 
         }
+
+
+
         private void AstroClient_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (process != null && !process.HasExited)
@@ -96,7 +97,7 @@ namespace AstroMathWinforms
             double parralax;
             double celsius;
             double mass;
-
+            // A try catch for parsing textbox values
             try
             {
                 observed = double.Parse(textBoxObserved.Text);
@@ -110,20 +111,22 @@ namespace AstroMathWinforms
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            // A try catch for Server Connectivity
+            try
+            {
+                string starVelocity = astroContract.StarVelocity(observed, rest).ToString("E");
+                string starDistance = astroContract.StarDistance(parralax).ToString();
+                string temperature = astroContract.TemperatureK(celsius).ToString();
+                string eventHorizon = astroContract.EventHorizon(mass).ToString("E");
 
-            string starVelocity = astroContract.StarVelocity(observed, rest).ToString();
-            string starDistance = astroContract.StarDistance(parralax).ToString();
-            string temperature = astroContract.TemperatureK(celsius).ToString();
-            string eventHorizon = astroContract.EventHorizon(mass).ToString();
+                ListViewItem listViewItem = new ListViewItem(starVelocity);
+                listViewItem.SubItems.Add(starDistance);
+                listViewItem.SubItems.Add(temperature);
+                listViewItem.SubItems.Add(eventHorizon);
 
-            ListViewItem listViewItem = new ListViewItem(starVelocity);
-            listViewItem.SubItems.Add(starDistance);
-            listViewItem.SubItems.Add(temperature);
-            listViewItem.SubItems.Add(eventHorizon);
+                listViewData.Items.Add(listViewItem);
 
-            listViewData.Items.Add(listViewItem);
-
-            List<System.Windows.Forms.TextBox> textBoxList = new List<System.Windows.Forms.TextBox>
+                List<System.Windows.Forms.TextBox> textBoxList = new List<System.Windows.Forms.TextBox>
             {
                 textBoxObserved,
                 textBoxRest,
@@ -133,10 +136,43 @@ namespace AstroMathWinforms
                 textBoxExponent
             };
 
-            foreach (var textbox in textBoxList)
-            {
-                textbox.Clear();
+                foreach (var textbox in textBoxList)
+                {
+                    textbox.Clear();
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+
+        }
+
+
+
+        private void updateLanguage(string localisation)
+        {
+            CultureInfo newCulture = new CultureInfo(localisation);
+            Thread.CurrentThread.CurrentCulture = newCulture;
+            Thread.CurrentThread.CurrentUICulture = newCulture;
+
+            Controls.Clear();
+            InitializeComponent();
+        }
+        private void btnUK_Click(object sender, EventArgs e)
+        {
+            updateLanguage("en-US");
+        }
+        private void btnFrance_Click(object sender, EventArgs e)
+        {
+            updateLanguage("fr-FR");
+        }
+
+        private void btnGerman_Click(object sender, EventArgs e)
+        {
+            updateLanguage("de-DE");
         }
     }
 }
