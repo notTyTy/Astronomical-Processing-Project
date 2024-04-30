@@ -36,7 +36,7 @@ namespace AstroMathWinforms
                 process.Kill();
             }
         }
-
+        // Button(s) to initiate an event and send/receive data.
         private void BtnCalculate_Click(object sender, EventArgs e)
         {
             double observed;
@@ -97,6 +97,8 @@ namespace AstroMathWinforms
         #endregion
 
         #region Font Styling
+        // Menu and Button option(s) to select a custom font and size from a font list (Font Dialogbox)
+
         private void FontStyleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FontDialog fontDialog = new FontDialog();
@@ -108,6 +110,7 @@ namespace AstroMathWinforms
         #endregion
 
         #region Language CultureInfo & Btns
+        // Menu and Button option(s) to change the language and layout for the three different countries.
         private void UpdateLanguage(string localisation)
         {
             CultureInfo newCulture = new CultureInfo(localisation);
@@ -157,6 +160,7 @@ namespace AstroMathWinforms
         #endregion
 
         #region Theming Configuration & Btns
+        // Menu and Button option(s) to change the form’s style (colours and visual appearance).
         private void Theme(string theme)
         {
             Color back = default;
@@ -286,6 +290,7 @@ namespace AstroMathWinforms
         {
             Theme("catppuccin");
         }
+        // Menu and Button option(s) to select a custom background colour from a colour palette (Color Dialogbox)
         private void BackgroundColorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ColorDialog colorDialog = new ColorDialog();

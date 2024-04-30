@@ -7,6 +7,12 @@ namespace ConsoleServer
     {
         static void Main()
         {
+            /*
+             * Create a ServiceHost and NetNamedPipeBinding in the “Program.cs” file
+             * to provide connection for the client(s). Ensure to add a Console.ReadLine 
+             * to pause the program during operation.
+             */
+
             string address = "net.pipe://localhost/netpipeAstro";
             ServiceHost serviceHost = new ServiceHost(typeof(AstroServer));
             NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
